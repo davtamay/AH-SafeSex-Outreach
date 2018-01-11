@@ -10,4 +10,11 @@ public class SceneController : MonoBehaviour {
 
 		SceneManager.LoadScene (name);
 	}
+	public void LoadURL(string url){
+
+		Application.OpenURL (url);
+	//	Application.Quit ();
+	
+	}
+
 }
