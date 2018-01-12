@@ -43,3 +43,4 @@
  # Builds
  *.apk
  *.unitypackage
+Temp/UnityLockfile

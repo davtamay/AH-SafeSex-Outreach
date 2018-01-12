@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -201,128 +202,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 40572438}
---- !u!1 &41505305
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 41505306}
-  - component: {fileID: 41505309}
-  - component: {fileID: 41505308}
-  - component: {fileID: 41505307}
-  m_Layer: 5
-  m_Name: TimeLine - Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &41505306
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41505305}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 569645586}
-  m_Father: {fileID: 609395398}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.036777485, y: 0.62936807}
-  m_AnchorMax: {x: 0.9576701, y: 0.64345676}
-  m_AnchoredPosition: {x: 0, y: -0.00048828125}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &41505307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41505305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 41505308}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 224048327}
-        m_MethodName: LoadURL
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: www.hiv.gov/hiv-basics/overview/history/hiv-and-aids-timeline
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &41505308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41505305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &41505309
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41505305}
 --- !u!1 &59786430
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,15 +349,15 @@ RectTransform:
   m_GameObject: {fileID: 66211270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0003201, y: 1.0003201, z: 1.0003201}
+  m_LocalScale: {x: 1.00032, y: 1.00032, z: 1.00032}
   m_Children: []
-  m_Father: {fileID: 609395398}
+  m_Father: {fileID: 672122030}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64683175}
-  m_AnchorMax: {x: 1, y: 0.6780696}
-  m_AnchoredPosition: {x: -0.000008583069, y: 0.0009765625}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.15753153}
+  m_AnchorMax: {x: 1, y: 0.23033705}
+  m_AnchoredPosition: {x: 0.002105713, y: 2.7724628}
+  m_SizeDelta: {x: 0.004272461, y: 14.733398}
   m_Pivot: {x: 0.5, y: 0.4999999}
 --- !u!114 &66211272
 MonoBehaviour:
@@ -652,7 +531,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 147167700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -662,7 +541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5300293}
+  m_AnchoredPosition: {x: 0, y: -0.5301819}
   m_SizeDelta: {x: 20, y: -0.5299988}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &147167702
@@ -704,7 +583,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1387710749}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.04202459
+  m_Size: 0.11786818
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -768,7 +647,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 153107089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1218,26 +1097,26 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342015238
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342015237}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1102860869}
   - {fileID: 631673286}
-  m_Father: {fileID: 672122030}
-  m_RootOrder: 1
+  m_Father: {fileID: 609395398}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.22800924}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0021070612, y: -2828.0752}
+  m_SizeDelta: {x: -0.004272461, y: 727.66797}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &342015239
 CanvasRenderer:
@@ -1414,6 +1293,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 378826015}
+--- !u!1 &410653714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 410653715}
+  - component: {fileID: 410653717}
+  - component: {fileID: 410653716}
+  m_Layer: 0
+  m_Name: image_medicationTimeLine (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &410653715
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410653714}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.000482, y: 1.000482, z: 1.000482}
+  m_Children: []
+  m_Father: {fileID: 672122030}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.040679935}
+  m_AnchorMax: {x: 1, y: 0.1144743}
+  m_AnchoredPosition: {x: 0.002494812, y: 1.748291}
+  m_SizeDelta: {x: 0.004272461, y: 0.6323242}
+  m_Pivot: {x: 0.5, y: 0.4999999}
+--- !u!114 &410653716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410653714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 894d39ac8308343c3882f84410e578f3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &410653717
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410653714}
 --- !u!1 &484826437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,80 +1532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!1 &569645585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 569645586}
-  - component: {fileID: 569645588}
-  - component: {fileID: 569645587}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &569645586
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569645585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 41505306}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &569645587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569645585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 88
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 136
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: <b>Click Here</b> to Check Out the full HIV and AIDS Timeline at HIV.Gov
---- !u!222 &569645588
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569645585}
 --- !u!1 &593378918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,7 +1694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &609395398
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1830,22 +1703,16 @@ RectTransform:
   m_GameObject: {fileID: 609395397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99968, y: 0.99968, z: 0.99968}
   m_Children:
-  - {fileID: 1624498946}
-  - {fileID: 1392617606}
-  - {fileID: 1426799442}
-  - {fileID: 1602799218}
-  - {fileID: 66211271}
-  - {fileID: 41505306}
-  - {fileID: 810388837}
-  m_Father: {fileID: 672122030}
-  m_RootOrder: 0
+  - {fileID: 342015238}
+  m_Father: {fileID: 1989416106}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.002105713, y: 1596.208}
-  m_SizeDelta: {x: 0.0042725, y: -3191.3984}
+  m_AnchoredPosition: {x: 0.0020923615, y: -5277.8037}
+  m_SizeDelta: {x: 0.004272461, y: 10555.602}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!222 &609395399
 CanvasRenderer:
@@ -2213,8 +2080,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99968, y: 0.99968, z: 0.99968}
   m_Children:
-  - {fileID: 609395398}
-  - {fileID: 342015238}
+  - {fileID: 1624498946}
+  - {fileID: 1392617606}
+  - {fileID: 1426799442}
+  - {fileID: 1602799218}
+  - {fileID: 66211271}
+  - {fileID: 1754639596}
+  - {fileID: 410653715}
+  - {fileID: 1302393293}
   m_Father: {fileID: 1989416106}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2406,177 +2279,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768415369}
---- !u!1 &810388836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 810388837}
-  - component: {fileID: 810388839}
-  - component: {fileID: 810388838}
-  m_Layer: 5
-  m_Name: Title History (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &810388837
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810388836}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0003201, y: 1.0003201, z: 1.0003201}
-  m_Children: []
-  m_Father: {fileID: 609395398}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.09117704}
-  m_AnchorMax: {x: 0.9576701, y: 0.62570447}
-  m_AnchoredPosition: {x: 22.0007, y: 7.5004883}
-  m_SizeDelta: {x: 34, y: 0.60998535}
-  m_Pivot: {x: 0.5, y: 0.4999999}
---- !u!114 &810388838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810388836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 39
-    m_MaxSize: 100
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: '<b><size=50><color=grey>Significant Events</color></size></b>
-
-
-    -1981 = CDC publishes first official report documenting the lung and immune problems
-    that 5 healthy young gay men aquired.
-
-
-    -1982 = First AIDS clinic is established in San Francisco.
-
-
-    -1985 = An Indiana resident who contracted AIDS through blood contamination products
-    for his health is refused entry to middle school. He speaks publicly against AIDS
-    stigma and discrimination.
-
-
-    -1986 = AIDS activist Cleve Jones crates the first anel of the AIDS Memorial Quilt.
-
-
-    -1987 = After one of FLorida''s School Board refuses to allow people living with
-    HIV attend school, a Federal judge reverses the rullling, which resulted in outraged
-    residents who refuse their children from attending school and in one of the HIV
-    positive person''s home being set on fire.
-
-
-    -1989 = The number if reported AIDS cases in the U.S reaches 100,000.
-
-
-    -1990 = U.S congress enacts the Americans with Disabilities Act (ADA). It prohibits
-    discrimination against individuals with disabilities, including people living
-    with HIV/AIDS.
-
-
-    -1992 = FDA licenses a 10 minute diagnostic kit to detect the presence of HIV-1.
-
-
-    -1993 = Virst major Hollywood film on a true story of AIDS, "Philadelphia," staring
-    Tom Hanks opens in theaters.
-
-
-    -1994 = AIDS becomes the leading cause of deathss for All Americans ages 25 to
-    44.
-
-
-    -1994 = FDA approves an oral HIV test (first non-blood-based antbody test for
-    HIV)
-
-
-    -1995 = 500,000 cases of AIDS have been reoported in the U.S.
-
-
-    -1996 = AIDS is no longer the leading cause of death for all Ameriacns 25 to 440,
-    but it remains the leading cause of death for African Americans in this age group.
-
-
-    -1997 CDC reports substantial decline in AIDS deaths in the U.S, due to the use
-    of Highly Active Antiretroviral Therapy (HAART). AIDS-related deaths in the U.S.
-    decline by 47% compared with the previous year.
-
-
-    -1998 = U.S Supremen Courts rules that ADA covers those in earlier stages of HIV,
-    not just those that developed AIDS.
-
-
-    -2001 = The CDC annnounces a new HIV prevention strategic plan to cut annual HIV
-    infections in the U.S by half within five years.
-
-
-    -2003 =  October 15th, marks first annual National Lation AIDS Awareness Day in
-    the U.S.
-
-
-    -2004 = Learders from 8 different countries call the creating of a GLobal HIV
-    Vaccine Enterrise to coordinate and accelerate research efforts to find an efective
-    HIV Vaccine.
-
-
-    -2007 = CDC reports over 565,000 people have died of AIDS in the U.S since 1981.
-
-
-    -2009 = President Obama launches the Global Health Initiative a six year 63 billion
-    effort to develo a comrehensive aroach to addressing global health in low to middle
-    income countries. Emergency Plan for AIDS Relief is a core component.
-
-
-    -2010 = The U.S government officially lifts the HIV travel and Immigration ban.
-
-
-    -2012 = The FDA approves the first at home HIV test that will let users learn
-    their HIV status right away.
-
-
-    -2013 = UNAIDS annoucences that new HIV infections have dropped more than 50%
-    in 25 low and middle income countries and the number for people getting antiretrovirall
-    treatment has increased 63% in the past two years.
-
-
-    -2015 = The World Health Organization certifies that Cuba is the first nation
-    to eliminate mother to child transmittion of both HIV ans Syphilis.'
---- !u!222 &810388839
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810388836}
 --- !u!1 &820806864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,6 +3003,128 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286938402}
+--- !u!1 &1302393292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1302393293}
+  - component: {fileID: 1302393296}
+  - component: {fileID: 1302393295}
+  - component: {fileID: 1302393294}
+  m_Layer: 5
+  m_Name: STDsInfo - Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1302393293
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302393292}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0003198, y: 1.0003198, z: 1.0003198}
+  m_Children:
+  - {fileID: 1630546216}
+  m_Father: {fileID: 672122030}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.031712968, y: 0.013}
+  m_AnchorMax: {x: 0.9576701, y: 0.034}
+  m_AnchoredPosition: {x: -1.9989014, y: 6.157715}
+  m_SizeDelta: {x: 4.0041504, y: 8.937988}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1302393294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302393292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1302393295}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 224048327}
+        m_MethodName: LoadURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://beforeplay.org/stds/
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1302393295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302393292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1302393296
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302393292}
 --- !u!1 &1351635065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,15 +3420,15 @@ RectTransform:
   m_GameObject: {fileID: 1392617605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0003198, y: 1.0003198, z: 1.0003198}
+  m_LocalScale: {x: 1.0003197, y: 1.0003197, z: 1.0003197}
   m_Children: []
-  m_Father: {fileID: 609395398}
+  m_Father: {fileID: 672122030}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.036777485, y: 0.9563217}
-  m_AnchorMax: {x: 0.9576701, y: 0.9669661}
-  m_AnchoredPosition: {x: 6.500493, y: -0.001953125}
-  m_SizeDelta: {x: 3, y: -0.0010681}
+  m_AnchorMin: {x: 0.048, y: 0.89397717}
+  m_AnchorMax: {x: 0.9576701, y: 0.9213429}
+  m_AnchoredPosition: {x: 2.5025997, y: -2.3881836}
+  m_SizeDelta: {x: 11.003967, y: -17.643158}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1392617607
 MonoBehaviour:
@@ -3682,17 +3506,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426799441}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 609395398}
+  m_Father: {fileID: 672122030}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6972836}
-  m_AnchorMax: {x: 1, y: 0.95070416}
-  m_AnchoredPosition: {x: 6.5003, y: 4.9990234}
-  m_SizeDelta: {x: 3.0006, y: -11}
+  m_AnchorMin: {x: 0, y: 0.2795999}
+  m_AnchorMax: {x: 1, y: 0.87918335}
+  m_AnchoredPosition: {x: 6.502411, y: 5.456665}
+  m_SizeDelta: {x: 3.0048676, y: 32.00586}
   m_Pivot: {x: 0.5, y: 0.5000001}
 --- !u!114 &1426799443
 MonoBehaviour:
@@ -4021,15 +3845,15 @@ RectTransform:
   m_GameObject: {fileID: 1602799217}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0003201, y: 1.0003201, z: 1.0003201}
+  m_LocalScale: {x: 1.00032, y: 1.00032, z: 1.00032}
   m_Children: []
-  m_Father: {fileID: 609395398}
+  m_Father: {fileID: 672122030}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6810633}
-  m_AnchorMax: {x: 1, y: 0.6972836}
-  m_AnchoredPosition: {x: 6.501068, y: 4.4995117}
-  m_SizeDelta: {x: 3, y: 6.6099854}
+  m_AnchorMin: {x: 0.0076809265, y: 0.23729149}
+  m_AnchorMax: {x: 1, y: 0.27787748}
+  m_AnchoredPosition: {x: 3.5031738, y: -0.6538086}
+  m_SizeDelta: {x: 9.004272, y: -9.175171}
   m_Pivot: {x: 0.5, y: 0.4999999}
 --- !u!114 &1602799219
 MonoBehaviour:
@@ -4077,7 +3901,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Want to know the history?
+  m_Text: How are you at risk?
 --- !u!222 &1602799221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4108,17 +3932,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1624498945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 609395398}
+  m_Father: {fileID: 672122030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.9701015}
+  m_AnchorMin: {x: 0, y: 0.92932004}
   m_AnchorMax: {x: 0.9576701, y: 1}
-  m_AnchoredPosition: {x: 6.4997945, y: 4.798828}
-  m_SizeDelta: {x: 3, y: -9.599976}
+  m_AnchoredPosition: {x: 6.5017815, y: 1.3078613}
+  m_SizeDelta: {x: 3.0040894, y: -6.003296}
   m_Pivot: {x: 0.5, y: 0.4999999}
 --- !u!114 &1624498947
 MonoBehaviour:
@@ -4166,7 +3990,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (S)exual (T)ransmited (D)iseases
+  m_Text: '(S)exual (T)ransmited (D)iseases or
+
+    (I)nfections '
 --- !u!222 &1624498949
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4241,6 +4067,81 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630391275}
+--- !u!1 &1630546215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1630546216}
+  - component: {fileID: 1630546218}
+  - component: {fileID: 1630546217}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1630546216
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630546215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1302393293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1630546217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630546215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 88
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 136
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <b>Click Here</b> to Check Out the full List of STDs and their symptoms
+    and causes.
+--- !u!222 &1630546218
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630546215}
 --- !u!1 &1645764741
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,6 +4299,97 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1727631607}
+--- !u!1 &1754639595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1754639596}
+  - component: {fileID: 1754639599}
+  - component: {fileID: 1754639598}
+  - component: {fileID: 1754639597}
+  m_Layer: 5
+  m_Name: Title- STD Types
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1754639596
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754639595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.000482, y: 1.000482, z: 1.000482}
+  m_Children: []
+  m_Father: {fileID: 672122030}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.0076809265, y: 0.1207716}
+  m_AnchorMax: {x: 1, y: 0.15186273}
+  m_AnchoredPosition: {x: 3.503189, y: -6.3918433}
+  m_SizeDelta: {x: 9.004272, y: 15.829712}
+  m_Pivot: {x: 0.5, y: 0.4999999}
+--- !u!114 &1754639597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754639595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.009731843, g: 0.009731843, b: 0.022058845, a: 0.5}
+  m_EffectDistance: {x: 1.5, y: 1.5}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1754639598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754639595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.597}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 39
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 39
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Identifying STDs
+
+    *https://www.mayoclinic.org/diseases-conditions/sexually-transmitted-diseases-stds/in-depth/std-symptoms/ART-20047081'
+--- !u!222 &1754639599
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754639595}
 --- !u!1 &1989416105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,13 +4417,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 672122030}
+  - {fileID: 609395398}
   m_Father: {fileID: 153107090}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10222}
-  m_SizeDelta: {x: 0, y: 20444}
+  m_AnchoredPosition: {x: 0, y: -3356}
+  m_SizeDelta: {x: 0, y: 6712}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1989416107
 CanvasRenderer:
